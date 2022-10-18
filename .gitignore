@@ -5,3 +5,4 @@ __pycache__
 *.pyc
 .vscode
 .ds_store
+_build
