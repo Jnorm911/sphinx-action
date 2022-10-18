@@ -7,8 +7,9 @@ jobs:
    build:
       runs-on: ubuntu-latest
       steps:
-      - name: Checkout
-        uses: actions/checkout@v2.3.4
+      - uses: actions/checkout@master
+        with:
+         fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
 
       - name: Set up Python
         uses: actions/setup-python@v2.2.1
@@ -21,15 +22,17 @@ jobs:
           python -m pip install sphinx-rtd-theme
           python -m pip install sphinxcontrib-apidoc
           python -m pip install sphinx-autoapi
+          
       - name: make the sphinx docs
         run: |
               make -C docs clean
               sphinx-apidoc -f -o . ..
               make -C docs html
+              
       - name: Build and Commit
         uses: sphinx-notes/pages@v2
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
-           github_token: ${{ secrets.GITHUB_TOKEN }}
-           branch: gh-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
