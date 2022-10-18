@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Build Docs
 
 # Controls when the workflow will run
 on:
@@ -24,16 +24,16 @@ jobs:
     steps:
          - uses: actions/checkout@v1
          # Standard drop-in approach that should work for most people.
-         - uses: jnorm911/sphinx-action@master
+         - uses: jnorm911/sphinx-action@main
            with:
               docs-folder: "docs/"
          # Example of using a custom build-command.
-         - uses: jnorm911/sphinx-action@master
+         - uses: jnorm911/sphinx-action@main
            with:
               build-command: "sphinx-build -b html . _build"
               docs-folder: "docs2/"
          # Grabbing custom dependencies and building as a pdf.
-         - uses: jnorm911/sphinx-action@master
+         - uses: jnorm911/sphinx-action@main
            with:
               pre-build-command: "apt-get update -y && apt-get install -y latexmk texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended"
               build-command: "make latexpdf"
