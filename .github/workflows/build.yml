@@ -24,3 +24,6 @@ jobs:
         with:
            branch: gh-pages
            github_token: ${{ secrets.GITHUB_TOKEN }}
+           
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4.4.1
