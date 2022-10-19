@@ -27,10 +27,17 @@ jobs:
            branch: gh-pages
            github_token: ${{ secrets.GITHUB_TOKEN }}
       - name: archive        
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v0
         with:
           path: .
           retention-days: 1
+      - name: upload
+        uses: actions/upload-artifact@main
+        with:
+          name: github-pages
+          path: /home/runner/work/_temp/artifact.tar
+          retention-days: 1
+          if-no-files-found: warn
        
    deploy:
        # Add a dependency to the build job
