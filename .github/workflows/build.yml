@@ -24,9 +24,12 @@ jobs:
         with:
            branch: gh-pages
            github_token: ${{ secrets.GITHUB_TOKEN }}
-           
+       
+   deploy:  
+      runs-on: ubuntu-latest
+      steps:
       - name: Deploy 
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: .
-          
+
