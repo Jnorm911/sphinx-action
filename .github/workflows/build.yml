@@ -14,8 +14,8 @@ jobs:
          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
          fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
 
-      - name: Set up Python
-        uses: actions/setup-python@v2
+      - name: Setup Python
+        uses: actions/setup-python@v4.3.0
         with:
           python-version: 3.10.1
               
