@@ -13,7 +13,7 @@ sys.path.insert(0, os.path.abspath('..'))
 project = 'sphinx docs'
 copyright = '2022, Josh Norman'
 author = 'Josh Norman'
-release = 'v0.1'
+release = 'v0.2'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
