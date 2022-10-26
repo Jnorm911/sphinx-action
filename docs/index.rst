@@ -10,7 +10,7 @@ Welcome to Sphinx Docs's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   Pharmacy
+   modules
 
 Indices and tables
 ==================
