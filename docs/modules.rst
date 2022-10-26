@@ -1,4 +1,4 @@
-Pharmacy
+sphinxaction
 ============
 
 .. toctree::
