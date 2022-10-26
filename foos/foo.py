@@ -6,7 +6,7 @@ def multiply(a,b):
        b (int): user inputed number
 
    Returns:
-       int: returns c, a multiple of a*b
+       int: c, a multiple of a*b
    """
    c = a*b
    return c

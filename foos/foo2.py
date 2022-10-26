@@ -6,7 +6,7 @@ def addition(a,b):
        b (int): int from user input
 
    Returns:
-       int: returns c, the addition of user input a + b
+       int: c, the addition of user input a + b
    """
    c = a+b
    return c

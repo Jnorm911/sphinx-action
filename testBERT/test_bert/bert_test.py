@@ -6,7 +6,16 @@ import logging
 
 def load_data(LOADDATES, data_path, filename, cols=None):
     """
-    load ICDC\ODES data
+    Loads ICDC / ODES data
+
+    Args:
+        LOADDATES (Date): Loads dates
+        data_path (path): The location of the file
+        filename (String): The name of the file
+        cols (int): number of columns.
+
+    Returns:
+        Series: "data", a pandas series of data 
     """
     datals = []
     """
