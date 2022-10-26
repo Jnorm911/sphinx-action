@@ -6,10 +6,10 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Sphinx Actions'
+project = 'Sphinx Docs'
 copyright = '2022, Josh Norman'
 author = 'Josh Norman'
-release = 'v0.5'
+release = 'v0.6'
 
 extensions = [
     'sphinx.ext.autodoc',
