@@ -6,6 +6,6 @@ Pharmacy
 
    foos
    spamfilter
-   testBERT.test_bert
+   testBERT
    test_spamfilter
    token
