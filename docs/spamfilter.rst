@@ -1,6 +1,3 @@
-spamfilter module
-=================
-
 .. automodule:: spamfilter
    :members:
    :undoc-members:

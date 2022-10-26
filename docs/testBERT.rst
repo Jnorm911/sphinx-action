@@ -1,21 +1,15 @@
-testBERT.test\_bert package
-===========================
+testBERT package
+================
 
-Submodules
-----------
-
-testBERT.test\_bert.bert\_test module
--------------------------------------
-
-.. automodule:: testBERT.test_bert.bert_test
+.. automodule:: testBERT
    :members:
    :undoc-members:
    :show-inheritance:
 
-Module contents
----------------
+Subpackages
+-----------
 
-.. automodule:: testBERT.test_bert
-   :members:
-   :undoc-members:
-   :show-inheritance:
+.. toctree::
+   :maxdepth: 4
+
+   testBERT.test_bert
