@@ -1,10 +1,7 @@
-foos package
-============
+foos module
+===========
 
-Submodules
-----------
-
-foos.foo module
+foo function
 ---------------
 
 .. automodule:: foos.foo
@@ -12,7 +9,7 @@ foos.foo module
    :undoc-members:
    :show-inheritance:
 
-foos.foo2 module
+foo2 function
 ----------------
 
 .. automodule:: foos.foo2
@@ -20,10 +17,3 @@ foos.foo2 module
    :undoc-members:
    :show-inheritance:
 
-Module contents
----------------
-
-.. automodule:: foos
-   :members:
-   :undoc-members:
-   :show-inheritance:
