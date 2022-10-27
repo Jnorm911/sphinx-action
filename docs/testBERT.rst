@@ -1,11 +1,6 @@
 testBERT package
 ================
 
-.. automodule:: testBERT
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
 Subpackages
 -----------
 
@@ -13,3 +8,11 @@ Subpackages
    :maxdepth: 4
 
    testBERT.test_bert
+
+Module contents
+---------------
+
+.. automodule:: testBERT
+   :members:
+   :undoc-members:
+   :show-inheritance:
