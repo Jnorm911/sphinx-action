@@ -12,6 +12,13 @@ Welcome to Sphinx's documentation!
 
    modules
 
+.. autosummary::
+   :toctree: _autosummary
+   :template: custom-module-template.rst
+   :recursive:
+
+   $(SOURCEDIR)
+
 Indices and tables
 ==================
 
