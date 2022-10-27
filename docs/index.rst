@@ -2,9 +2,7 @@ PROJECT
 =======
 
 .. toctree::
-
-.. autosummary::
-   :toctree: _autosummary
+   :hidden:
 
 Indices and tables
 ==================
