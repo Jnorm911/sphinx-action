@@ -23,6 +23,7 @@ jobs:
            run: |
               python -m pip install sphinx-rtd-theme
               python -m pip install sphinxcontrib-apidoc
+              python -m pip install sphinx-autodoc-typehints
 
          - name: Build and Commit
            uses: sphinx-notes/pages@v2
