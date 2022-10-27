@@ -12,12 +12,6 @@ Welcome to Sphinx's documentation!
 
    modules
 
-.. autosummary::
-   :toctree: _autosummary
-   :recursive:
-
-   testBERT
-
 Indices and tables
 ==================
 
