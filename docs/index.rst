@@ -6,12 +6,11 @@
 Welcome to Sphinx Docs's documentation!
 =======================================
 
-.. autosummary::
-   :toctree: _autosummary
-   :template: custom-module-template.rst
-   :recursive:
+.. toctree::
+   :maxdepth: 4
+   :caption: Contents:
 
-   sphinxaction
+.. include:: modules.rst
 
 Indices and tables
 ==================
