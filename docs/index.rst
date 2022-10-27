@@ -7,16 +7,10 @@ Welcome to Test's documentation!
 ================================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :hidden:
 
    modules
-
-.. autosummary::
-   :toctree: _autosummary
-   :template: custom-module-template.rst
-   :recursive:
-
+   api
 
 Indices and tables
 ==================
