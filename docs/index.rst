@@ -12,6 +12,10 @@ Welcome to Test's documentation!
 
    modules
 
+.. autosummary::
+   :toctree: _autosummary
+   :template: custom-module-template.rst
+   :recursive:
 
 
 Indices and tables
