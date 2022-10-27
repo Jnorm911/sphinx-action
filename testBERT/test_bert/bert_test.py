@@ -18,16 +18,16 @@ def load_data(LOADDATES, data_path, filename, cols=None):
         Series: "data", a pandas series of data 
     """
     datals = []
-    """
-    for t, dt in enumerate(LOADDATES):
-        FNAME = os.path.join(train_data_path, 'claim_l_{}.csv.gz'.format(dt))
-        try:
-            datals.append(pd.read_csv(FNAME, usecols = cols, low_memory=False).fillna('Unknown'))
-        except:
-            logger.info('File {} missing'.format( FNAME))
-            continue
-        logger.info('{} of {}, file {}'.format(t+1, len(LOADDATES), FNAME))
-    """
+    
+    # for t, dt in enumerate(LOADDATES):
+    #     FNAME = os.path.join(train_data_path, 'claim_l_{}.csv.gz'.format(dt))
+    #     try:
+    #         datals.append(pd.read_csv(FNAME, usecols = cols, low_memory=False).fillna('Unknown'))
+    #     except:
+    #         logger.info('File {} missing'.format( FNAME))
+    #         continue
+    #     logger.info('{} of {}, file {}'.format(t+1, len(LOADDATES), FNAME))
+    
     data = pd.read_csv(os.path.join(data_path, filename)).fillna("Unknown")
     # data = pd.concat(datals, 0)
     # logger.info('check patient before sorting {}'.format(data[['PatientId','BegDateOfService','LineId']].head(20)))
