@@ -19,7 +19,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.viewcode',
     'sphinx.ext.napoleon',
-    'spinx.ext.autosummary'
+    'sphinx.ext.autosummary'
 ]
 
 autosummary_generate = True
