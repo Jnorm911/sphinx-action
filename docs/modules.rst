@@ -1,11 +1,9 @@
-sphinxaction
+Pharmacy
 ============
 
-.. toctree::
-   :maxdepth: 4
+.. autosummary::
+   :toctree: _autosummary
+   :template: custom-module-template.rst
+   :recursive:
 
-   foos
-   spamfilter
-   testBERT
-   test_spamfilter
-   token
+   sphinxaction
