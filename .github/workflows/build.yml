@@ -29,8 +29,9 @@ jobs:
          - name: make the sphinx docs
            run: |
               cd docs
+              make -C docs clean 
               sphinx-apidoc -f -o . ..
-              make html
+              make -C docs html
 
          - name: Init new repo in dist folder and commit generated files
            run: |
