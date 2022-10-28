@@ -34,7 +34,7 @@ jobs:
 
          - name: Init new repo in dist folder and commit generated files
            run: |
-              cd docs/build/html/
+              cd docs/_build/html/
               git init
               touch .nojekyll
               git add -A
@@ -48,7 +48,7 @@ jobs:
               branch: gh-pages
               github_token: ${{ secrets.GITHUB_TOKEN }}
               force: true
-              directory: ./docs/build/html
+              directory: ./docs/_build/html
          - name: archive
            uses: actions/upload-pages-artifact@v0
            with:
