@@ -35,7 +35,6 @@ jobs:
          - uses: ammaraskar/sphinx-action@0.4
            with:
               docs-folder: "docs/"
-              build-command: "sphinx-build -b html . _build"
 
          - name: Push changes
            uses: ad-m/github-push-action@v0.6.0
