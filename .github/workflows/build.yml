@@ -32,9 +32,14 @@ jobs:
               sphinx-apidoc -f -o . ..
               make -C docs html
 
-         - uses: ammaraskar/sphinx-action@0.4
+         - uses: ammaraskar/sphinx-action@master
            with:
               docs-folder: "docs/"
+         # Example of using a custom build-command.
+         - uses: ammaraskar/sphinx-action@master
+           with:
+              build-command: "sphinx-build -b html . _build"
+              docs-folder: "docs2/"
 
          - name: Push changes
            uses: ad-m/github-push-action@v0.6.0
