@@ -28,7 +28,6 @@ jobs:
 
          - name: make the sphinx docs
            run: |
-              cd docs
               make -C docs clean 
               sphinx-apidoc -f -o . ..
               make -C docs html
