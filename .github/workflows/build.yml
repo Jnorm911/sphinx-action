@@ -47,8 +47,6 @@ jobs:
            with:
               branch: gh-pages
               github_token: ${{ secrets.GITHUB_TOKEN }}
-              force: true
-              directory: ./docs/_build/html
          - name: archive
            uses: actions/upload-pages-artifact@v0
            with:
