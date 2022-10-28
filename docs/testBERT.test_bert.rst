@@ -12,14 +12,6 @@ testBERT.test\_bert.bert\_test module
    :undoc-members:
    :show-inheritance:
 
-testBERT.test\_bert.test module
--------------------------------
-
-.. automodule:: testBERT.test_bert.test
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
 Module contents
 ---------------
 

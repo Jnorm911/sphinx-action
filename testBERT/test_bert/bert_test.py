@@ -27,3 +27,16 @@ def load_data(LOADDATES, data_path, filename, cols=None):
     data = data[cols]
     logging.info(data.shape)
     return data
+
+def subtraction(a,b):
+    """ Subtraction Function
+
+    Args:
+        a (int): first user input
+        b (int): second user input
+
+    Returns:
+        int: c, a-b
+    """
+    c = a-b
+    return c
