@@ -32,23 +32,16 @@ jobs:
               sphinx-apidoc -f -o . ..
               make -C docs html
 
-         - name: Init new repo in dist folder and commit generated files
-           run: |
-              cd docs/_build/html/
-              git init
-              touch .nojekyll
-              git add -A
-              git config --local user.email "action@github.com"
-              git config --local user.name "GitHub Action"
-              git commit -m 'deploy'
+         - uses: ammaraskar/sphinx-action@0.4
+           with:
+              docs-folder: "docs/"
+              build-command: "sphinx-build -b html . _build"
 
          - name: Push changes
            uses: ad-m/github-push-action@v0.6.0
            with:
               branch: gh-pages
               github_token: ${{ secrets.GITHUB_TOKEN }}
-              force: true
-              directory: ./docs/_build/html
          - name: archive
            uses: actions/upload-pages-artifact@v0
            with:
