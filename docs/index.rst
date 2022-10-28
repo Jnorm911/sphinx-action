@@ -1,5 +1,5 @@
 .. Sphinx documentation master file, created by
-   sphinx-quickstart on Thu Oct 27 15:17:21 2022.
+   sphinx-quickstart on Thu Oct 27 17:04:15 2022.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
@@ -11,13 +11,6 @@ Welcome to Sphinx's documentation!
    :caption: Contents:
 
    modules
-
-.. autosummary::
-   :toctree: _autosummary
-   :template: custom-module-template.rst
-   :recursive:
-
-   $(SOURCEDIR)
 
 Indices and tables
 ==================

@@ -21,12 +21,17 @@ jobs:
 
          - name: Install dependencies
            run: |
+              python -m pip install -U sphinx
               python -m pip install sphinx-rtd-theme
               python -m pip install sphinxcontrib-apidoc
               python -m pip install sphinx-autodoc-typehints
 
-         - name: Build and Commit
-           uses: sphinx-notes/pages@v2
+         - name: make the sphinx docs
+           run: |
+              cd docs
+              sphinx-apidoc -f -o . ..
+              make html
+
          - name: Push changes
            uses: ad-m/github-push-action@v0.6.0
            with:

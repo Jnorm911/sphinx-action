@@ -1,4 +1,4 @@
-Pharmacy
+sphinxaction
 ============
 
 .. toctree::
@@ -9,4 +9,3 @@ Pharmacy
    testBERT
    test_spamfilter
    token
-   testBERT.test_bert
