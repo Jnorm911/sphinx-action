@@ -1,5 +1,5 @@
 import os
-# import pandas as pd
+import pandas as pd
 
 def subtraction(a,b):
    """Simple subtraction function
@@ -45,5 +45,5 @@ def load_data(LOADDATES, data_path, filename, cols=None):
     # logger.info('check patient sorting {}'.format(data[['PatientId','BegDateOfService','LineId']].head(20)))
     # data = data.head(100000)
     data = data[cols]
-    logging.info(data.shape)
+    # logging.info(data.shape)
     return data
