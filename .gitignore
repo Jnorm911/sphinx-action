@@ -6,3 +6,4 @@ __pycache__
 .vscode
 .ds_store
 _build
+_autosummary
