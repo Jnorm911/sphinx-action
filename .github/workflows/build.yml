@@ -27,6 +27,8 @@ jobs:
            uses: sphinx-notes/pages@v2
          - name: Push changes
            run: |
+              git config --local user.email "action@github.com"
+              git config --local user.name "GitHub Action"
               git push origin gh-pages
          - name: archive
            uses: actions/upload-pages-artifact@v0
