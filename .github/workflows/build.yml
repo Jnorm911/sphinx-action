@@ -25,6 +25,9 @@ jobs:
               python -m pip install sphinx-autodoc-typehints
          - name: Build and Commit
            uses: sphinx-notes/pages@v2
+         - name: Push changes
+           run: |
+              git push origin gh-pages
          - name: archive
            uses: actions/upload-pages-artifact@v0
            with:
