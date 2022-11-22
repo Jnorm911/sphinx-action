@@ -27,7 +27,7 @@ jobs:
            uses: sphinx-notes/pages@v2
          - name: Push changes
            run: |
-              git push -u -f origin gh-pages
+              git push origin gh-pages --force
          - name: archive
            uses: actions/upload-pages-artifact@v0
            with:
