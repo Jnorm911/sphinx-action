@@ -36,7 +36,7 @@ jobs:
          - name: Build and Commit
            uses: sphinx-notes/pages@v2 # populates sphinx docs, Fork needed
          - name: Push changes
-           uses: ad-m/github-push-action@v0.6.0 #Pushes to any branch, Fork needed
+           uses: Jnorm911/push-action@v1 #Pushes to any branch, Fork needed
            with:
               branch: gh-pages
               github_token: ${{ secrets.GITHUB_TOKEN }}
