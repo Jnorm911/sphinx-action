@@ -9,13 +9,13 @@ jobs:
    build:
       runs-on: ubuntu-latest
       steps:
-         - uses: actions/checkout@v3
+         - uses: actions/checkout@v3 #Github Verified
            with:
               persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
               fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
 
          - name: Setup Python
-           uses: actions/setup-python@v4.3.0
+           uses: actions/setup-python@v4.3.0 #Github Verified
            with:
               python-version: 3.10.1
          - name: Install dependencies
@@ -23,16 +23,30 @@ jobs:
               python -m pip install -U sphinx
               python -m pip install sphinx-rtd-theme
               python -m pip install sphinx-autodoc-typehints
+
+         - name: Hello world action step
+           id: hello
+           uses: Jnorm911/my-action@v1
+           with:
+              who-to-greet: "Josh"
+         # Use the output from the `hello` step
+         - name: Get the output time
+           run: echo "The time was ${{ steps.hello.outputs.time }}"
+
          - name: Build and Commit
-           uses: sphinx-notes/pages@v2
+           uses: sphinx-notes/pages@v2 # populates sphinx docs, Fork needed
          - name: Push changes
-           run: |
-              git push origin gh-pages --force
+           uses: ad-m/github-push-action@v0.6.0 #Pushes to any branch, Fork needed
+           with:
+              branch: gh-pages
+              github_token: ${{ secrets.GITHUB_TOKEN }}
          - name: archive
-           uses: actions/upload-pages-artifact@v0
+           uses: actions/upload-pages-artifact@v0 #Zips for deployment Github Official
            with:
               path: .
               retention-days: 1
+
+   ## Github official commands used to deploy to Github pages ##
 
    deploy:
       # Add a dependency to the build job
