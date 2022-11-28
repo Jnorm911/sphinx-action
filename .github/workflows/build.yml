@@ -32,11 +32,10 @@ jobs:
          # Use the output from the `hello` step
          - name: Get the output time
            run: echo "The time was ${{ steps.hello.outputs.time }}"
-
          - name: Build and Commit
-           uses: sphinx-notes/pages@v2 # populates sphinx docs, Fork needed
+           uses: Jnorm911/auto-sphinx-action@v1 # populates sphinx docs
          - name: Push changes
-           uses: Jnorm911/push-action@v2 #Pushes to any branch, Fork needed
+           uses: Jnorm911/push-action@v2 #Pushes to any branch
            with:
               branch: gh-pages
               github_token: ${{ secrets.GITHUB_TOKEN }}
