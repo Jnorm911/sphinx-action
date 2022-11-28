@@ -1,5 +1,5 @@
-Features Store
-==============
+Features Storez
+===============
 
 This is a list of all our features available in the store
 
