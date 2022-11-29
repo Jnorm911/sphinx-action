@@ -33,7 +33,7 @@ jobs:
          - name: Get the output time
            run: echo "The time was ${{ steps.hello.outputs.time }}"
          - name: Build and Commit
-           uses: Jnorm911/auto-sphinx-action@v1 # populates sphinx docs
+           uses: AudaxHealthInc/sphinx-build-action@v1 # populates sphinx docs
          - name: Push changes
            uses: Jnorm911/push-action@v2 #Pushes to any branch
            with:
